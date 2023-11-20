@@ -131,6 +131,15 @@ nav ul li a{
     scroll-behavior: smooth;
     
 }
+.animales::-webkit-scrollbar {
+    background-color: white;
+    border-radius: 10px;
+
+}
+.animales::-webkit-scrollbar-thumb {
+    background-color: #189CAB;
+    
+}
 .animales .contenedor-animales1 {
     display: flex;
     flex-direction: column;
