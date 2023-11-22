@@ -31,6 +31,9 @@ nav ul li a{
     font-family:Arial, Helvetica, sans-serif ;
     
 }
+.menu a span {
+    display: none;
+}
 .about a{
     position: absolute;
     z-index: 1;
@@ -42,9 +45,14 @@ nav ul li a{
     left: 9px;
     
 }
+
 .sign {
     z-index: 2;
-    
+  
+}
+.sign img {
+    display: none;
+    width: 30px;
 }
 .sign a {
     text-decoration: none;
@@ -121,7 +129,6 @@ nav ul li a{
 .categorias .collar{
     position: relative;
     bottom: 100px;
-
 }
 
 .animales {
@@ -188,10 +195,8 @@ div.servicios {
     display: flex;
 }
 .encabezado-servicios img {
-    width: 170px;
-    
-    position: relative;
- 
+    width: 170px;    
+    position: relative; 
 }
 .contenedor-servicios {
     display: flex;
@@ -442,4 +447,201 @@ footer {
 }
 .enlaces-footer .social img {
     margin-right: 40px;
+}
+/* para mobile------------------------------------*/
+@media  (max-width: 600px)
+{
+    /* presentacion-----------------*/
+.presentacion {
+    overflow: hidden;
+    height: 100%;
+    background-color: #189CAB;
+    width: 100vw;
+}
+.fondo, .about {
+    display: none;
+}
+
+.barra {
+    display: flex;
+    
+    align-items: center;
+    gap: 5px;
+    padding: 20px 0;
+}
+.barra a{
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    color: #062D3E;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.logo {
+    position: relative;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    
+    
+}
+.contenido-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu a span {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    
+}
+ .menu:hover> .contenido-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #5ac5d1;
+    gap: 5px;
+    
+    
+}
+.menu:hover> .contenido-menu li a {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 10px;
+}
+.sign img {
+    display: flex;
+}
+.sign span {
+    display: none;
+}
+
+
+.contenedor-presentacion {
+    display: flex;
+    width: 800px;
+    padding: 0;
+    
+}
+.titulo {
+    align-content: center;
+    margin: 0 0 30px 0;
+    padding: 0
+    ;
+}
+.categorias .collar{
+    position: relative;
+    width: 140px;
+    bottom: 220px;
+}
+/* categorias-----------*/
+.categorias-animales {
+    height: 400px;
+}
+.imagen-categorias {
+    width: 300px;
+    position: relative;
+    bottom: 150px;
+}
+.animales {
+    overflow: hidden;
+    
+}
+.contenedor-animales2 img, .contenedor-animales2 p{
+    display: none;
+}
+.categorias {
+    display: flex;
+    flex-direction: column;
+    
+}
+.contenedor-animales-grid {
+    display: none
+}
+.grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10 {
+    display: none;
+}
+.servicios {
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-servicios {
+    flex-direction: column;
+    align-items: center;
+}
+.subcontenedor2 {
+    padding-bottom: 60px;
+}
+.subcontenedor3 {
+    display: none;
+}
+.parenting {
+    flex-direction: column;
+    height: 1000px;
+    padding-top: 50px;
+    justify-content: center;
+    
+}
+.parenting-content {
+    width: 100%;
+    padding-right: 100px;
+    
+}
+.parenting .frame-parenting, .parenting .frame-right, .parenting .checkbox {
+    display: none;
+}
+.reviews {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+}
+.reviews .contenedor-review-texto {
+    align-items: center;
+    position: relative;
+    right: 50px;
+}
+.reviews .contenedor-imagen-review{
+    display: none;
+}
+.reviews .frame-review {
+    display: none;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+}
+.subscribe .izquierdo {
+    justify-content: center;
+}
+.subscribe .izquierdo .frame-left-subscribe  {
+    display: none;
+}
+.subscribe .izquierdo .dog-subscribe {
+    left: 0;
+}
+.derecho .frame-right-subscribe {
+    display: none;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 30px;
+    
+}
+.enlaces-footer {
+    display: flex;
+    flex-direction: column;
+}
+.enlaces-footer a{
+    margin-right: 20px;
+}
 }
